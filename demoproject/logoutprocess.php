@@ -1,0 +1,9 @@
+<?php
+    if(isset($_REQUEST['logout'])){
+        session_destroy();
+        echo
+  "<script> 
+  window.location.href='http://localhost/web/demoproject/login.php';
+  </script>";
+    }
+?>
